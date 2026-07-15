@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rohitha K | Product Resume</title>
+  <style>
+    :root {
+      --ink: #16212d;
+      --muted: #536173;
+      --line: #d9dde3;
+      --paper: #f7f8f9;
+      --accent: #007c7a;
+      --warm: #c45b45;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.44;
+    }
+
+    main {
+      width: min(930px, calc(100% - 32px));
+      margin: 24px auto;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 44px 46px;
+      box-shadow: none;
+    }
+
+    header {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 21px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 2.5rem;
+      line-height: 1;
+      letter-spacing: -.035em;
+    }
+
+    .contact {
+      margin: 0;
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    .contact a {
+      color: inherit;
+      text-decoration: none;
+      transition: color .18s ease;
+    }
+
+    .target {
+      margin: 18px 0 0;
+      color: var(--accent);
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: .83rem;
+      letter-spacing: .12em;
+    }
+
+    section {
+      margin-top: 24px;
+    }
+
+    h2 {
+      margin: 26px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      font-size: 1rem;
+      line-height: 1.25;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+    }
+
+    h3 {
+      margin: 18px 0 3px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 9px;
+    }
+
+    ul {
+      margin: 7px 0 0;
+      padding-left: 19px;
+    }
+
+    li {
+      margin: 0 0 6px;
+    }
+
+    a {
+      color: var(--ink);
+    }
+
+    .summary {
+      margin-top: 10px;
+      margin-bottom: 22px;
+      padding: 14px 18px;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--warm);
+      border-radius: 8px;
+      background: #fbfbfb;
+      color: #1d2a37;
+      font-size: 1rem;
+      line-height: 1.45;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px 18px;
+      margin-top: 12px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .skills li {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px;
+      background: #fbfbfb;
+      line-height: 1.4;
+      transition: border-color .18s ease, background .18s ease;
+    }
+
+    .skills li:hover {
+      border-color: var(--accent);
+      background: #f9fbfb;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-weight: 700;
+      font-size: .92rem;
+    }
+
+    .project {
+      margin-top: 16px;
+      margin-bottom: 22px;
+      margin-left: -14px;
+      margin-right: -14px;
+      padding: 12px 14px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      break-inside: avoid;
+      transition: border-color .18s ease, background .18s ease;
+    }
+
+    .project:hover {
+      border-color: var(--accent);
+      background: #f9fbfb;
+    }
+
+    .project h3 {
+      margin-bottom: 5px;
+      line-height: 1.25;
+    }
+
+    .project ul {
+      margin-top: 9px;
+    }
+
+    .project li {
+      margin-bottom: 7px;
+      line-height: 1.38;
+    }
+
+    .project-links {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .project-links a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+      margin: 0 4px;
+      transition: color .18s ease;
+    }
+
+    .project-links a:hover,
+    .contact a:hover,
+    .certs a:hover {
+      text-decoration: underline;
+    }
+
+    .certs p,
+    .education p {
+      margin-bottom: 5px;
+    }
+
+    .certs a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+      transition: color .18s ease;
+    }
+
+    .meta {
+      margin-bottom: 9px;
+      line-height: 1.3;
+    }
+
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    @media print {
+      html,
+      body {
+        background: #ffffff !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      body {
+        margin: 0 !important;
+      }
+
+      main {
+        width: 100% !important;
+        max-width: 940px !important;
+        margin: 0 auto !important;
+        background: #ffffff !important;
+        border: 1px solid var(--line) !important;
+        border-radius: 8px !important;
+        box-shadow: none !important;
+        padding: 24px 30px !important;
+      }
+
+      header {
+        border-bottom: 3px solid var(--ink) !important;
+        padding-bottom: 18px !important;
+        margin-bottom: 22px !important;
+      }
+
+      h1 {
+        font-size: 34px !important;
+        line-height: 1.05 !important;
+        margin-bottom: 8px !important;
+      }
+
+      .contact {
+        font-size: 12px !important;
+        line-height: 1.35 !important;
+      }
+
+      .target {
+        color: var(--accent) !important;
+        font-size: 12px !important;
+        margin-top: 12px !important;
+        line-height: 1.3 !important;
+      }
+
+      section {
+        margin-top: 22px !important;
+      }
+
+      h2 {
+        margin: 24px 0 12px !important;
+        padding-bottom: 8px !important;
+        border-bottom: 1px solid var(--line) !important;
+        line-height: 1.25 !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+
+      h3 {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+
+      .summary {
+        border: 1px solid var(--line) !important;
+        border-left: 4px solid var(--accent) !important;
+        border-radius: 8px !important;
+        background: #fbfbfb !important;
+        padding: 14px 18px !important;
+        line-height: 1.45 !important;
+        margin-top: 10px !important;
+        margin-bottom: 22px !important;
+      }
+
+      .skills {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 14px 18px !important;
+        margin-top: 12px !important;
+      }
+
+      .skills li {
+        border: 1px solid var(--line) !important;
+        border-radius: 8px !important;
+        padding: 14px 16px !important;
+        background: #fbfbfb !important;
+        line-height: 1.4 !important;
+        transition: none !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+
+      .project {
+        margin-top: 16px !important;
+        margin-bottom: 22px !important;
+        border-color: transparent !important;
+        background: transparent !important;
+        transition: none !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+
+      .project h3 {
+        margin-bottom: 5px !important;
+        line-height: 1.25 !important;
+      }
+
+      .meta {
+        margin-bottom: 9px !important;
+        line-height: 1.3 !important;
+      }
+
+      section,
+      article,
+      .education,
+      .certs {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+
+      ul {
+        margin-top: 9px !important;
+      }
+
+      li {
+        margin-bottom: 7px !important;
+        line-height: 1.38 !important;
+      }
+
+      a {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+
+      .project-links a,
+      .certs a {
+        color: var(--accent) !important;
+        text-decoration: none !important;
+      }
+    }
+
+    @media (max-width: 720px) {
+      main {
+        padding: 28px;
+      }
+
+      .skills {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Rohitha K</h1>
+      <p class="contact">Vizag, India | <a href="mailto:kandregularohitha1@gmail.com">kandregularohitha1@gmail.com</a> | <a href="https://www.linkedin.com/in/kandregularohitha/" target="_blank" rel="noopener noreferrer">linkedin.com/in/kandregularohitha</a> | <a href="#" target="_blank" rel="noopener noreferrer">Portfolio</a></p>
+      <p class="target">Associate Product Manager | AI Product Management | Workflow Automation</p>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">MBA graduate with IBM Product Manager and Microsoft AI Product Manager certifications, focused on AI-first product thinking, workflow automation, MVP planning, product metrics, and human-in-the-loop product design. Built Agent R and FeedbackFlow AI to demonstrate how manual workflows can be converted into structured AI-assisted product systems with clear user problems, success metrics, review checkpoints, and product-ready outputs.</p>
+    </section>
+
+    <section>
+      <h2>Product Management Skills</h2>
+      <ul class="skills">
+        <li><strong>Product Planning:</strong> Problem framing, user pain-point analysis, workflow mapping, MVP planning, PRD thinking, roadmaps, success metrics</li>
+        <li><strong>AI Workflow Design:</strong> AI-assisted workflows, prompt planning, human-in-the-loop design, AI guardrails, output review, quality checkpoints</li>
+        <li><strong>Product Execution:</strong> RICE prioritization, Jira-ready user stories, acceptance criteria, backlog structuring, metrics definition</li>
+        <li><strong>Tools:</strong> ChatGPT, Lovable, Replit, Gamma, Canva, CapCut, Excel, Google Docs, Google Sheets; Exposure: Jira, Notion, Figma, Mixpanel, n8n, Zapier</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Product Projects</h2>
+
+      <article class="project">
+        <h3>Agent R &mdash; AI-Assisted Reel Production Workflow + Lovable Prototype</h3>
+        <p class="meta">AI Product Management Project | Proposal, POV, and MVP Plan Completed | 2026</p>
+        <ul>
+          <li>Identified a manual content-production problem where converting raw stories into draft reels required repeated effort across research, scripting, scene planning, image prompts, dialogue timing, and editing preparation.</li>
+          <li>Mapped the end-to-end workflow and designed a human-in-the-loop MVP with structured prompts, approval checkpoints, reusable workflow steps, and quality guardrails.</li>
+          <li>Created the product proposal, Proof of Value, and MVP plan covering target users, prioritized capabilities, success metrics, risks, and phased roadmap.</li>
+          <li>Tested early reel-production samples and defined POC targets to reduce production time from 3.5&ndash;6+ hours to 1.5&ndash;3 hours, reduce script-preparation effort by 40&ndash;50%, and reduce prompt rework by 40&ndash;60%.</li>
+          <li>Built a Lovable prototype to demonstrate workflow stages, review checkpoints, evidence tracking, and future operator-dashboard direction.</li>
+        </ul>
+        <p class="project-links"><strong>Project Links:</strong> <a href="#">Proposal</a> | <a href="#">POV</a> | <a href="#">MVP Plan</a> | <a href="#">Prototype</a> | <a href="#">Demo</a></p>
+      </article>
+
+      <article class="project">
+        <h3>FeedbackFlow AI &mdash; Ecommerce Feedback Triage Assistant</h3>
+        <p class="meta">Working Replit App + Jira-Ready Execution Backlog | 2026</p>
+        <ul>
+          <li>Built a Replit-based ecommerce feedback triage tool that converts raw customer feedback into category, product area, sentiment, priority, suggested action, user story, acceptance criteria, and backlog items.</li>
+          <li>Designed the dashboard, triage, backlog, and insights views to show how product managers can move from messy feedback to structured product decision inputs.</li>
+          <li>Created rule-based AI simulation logic and a Jira-ready execution backlog with 3 feature groups and 12 delivery-ready work items.</li>
+        </ul>
+        <p class="project-links"><strong>Project Links:</strong> <a href="#">Replit App</a> | <a href="#">Jira Backlog</a> | <a href="#">Demo</a></p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <h3>Digital Marketing Manager</h3>
+      <p class="meta">Infotenix and GoInformative | Aug 2021 - Jan 2022</p>
+        <ul>
+          <li>Started digital marketing operations for two early-stage startups, setting up execution rhythms for content, SEO, paid campaigns, analytics, reporting, and client delivery.</li>
+          <li>Led a 3-member team across campaign execution, coordination, client updates, and delivery follow-through.</li>
+          <li>Improved user interactions by 40% through channel planning, content iteration, campaign execution, and performance analysis.</li>
+          <li>Increased viewer-to-conversion outcomes by 30% for public program campaigns through messaging, targeting, and campaign planning.</li>
+        </ul>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <p><strong>MBA &mdash; Marketing and Analytics Specialization, GITAM School of Business</strong> | 2025 | 75%</p>
+      <p><strong>B.Sc. Statistics, PRISM Degree and PG College</strong> | 2020 | 75%</p>
+    </section>
+
+    <section class="certs">
+      <h2>Certifications</h2>
+      <p><strong>Microsoft AI Product Manager Certification</strong> &mdash; <a href="https://drive.google.com/file/d/1Q4VoAW6XD_BiDA7ewZdy7D1yKRIWwAb1/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a></p>
+      <p><strong>IBM Product Manager Certification</strong> &mdash; <a href="https://drive.google.com/file/d/1ANjfQ0--vsHMHrQLvE-Pm5F5mrBiMani/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a></p>
+    </section>
+  </main>
+</body>
+</html>
